@@ -49,7 +49,7 @@ CREATE TABLE IF NOT EXISTS `departments` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
--- Dumping data for table `departments`
+-- 
 --
 
 INSERT INTO `departments` (`dept_no`, `dept_name`) VALUES
@@ -74,7 +74,7 @@ CREATE TABLE IF NOT EXISTS `dept_manager` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
--- Dumping data for table `dept_manager`
+-- Inserting data for table `dept_manager`
 --
 
 INSERT INTO `dept_manager` (`dept_no`, `emp_no`, `passcode`, `from_date`) VALUES
@@ -102,7 +102,7 @@ CREATE TABLE IF NOT EXISTS `employees` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
--- Dumping data for table `employees`
+--Inserting data for table `employees`
 --
 
 INSERT INTO `employees` (`emp_no`, `passcode`, `birth_date`, `Name`, `gender`, `hire_date`, `dept`) VALUES
@@ -128,7 +128,7 @@ CREATE TABLE IF NOT EXISTS `outward` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `outward`
+--Inserting data for table `outward`
 --
 
 INSERT INTO `outward` (`product_id`, `product`, `quantity`, `transaction_id`) VALUES
@@ -157,7 +157,7 @@ CREATE TABLE IF NOT EXISTS `product` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
--- Dumping data for table `product`
+-- Inserting data for table `product`
 --
 
 INSERT INTO `product` (`product_ID`, `product_Name`, `Quantity`, `product_Status`, `product_desc`, `sup_ID`, `Category_ID`) VALUES
@@ -184,7 +184,7 @@ CREATE TABLE IF NOT EXISTS `supplier` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
--- Dumping data for table `supplier`
+-- Inserting data for table `supplier`
 --
 
 INSERT INTO `supplier` (`sup_no`, `name`, `phone`) VALUES
@@ -192,6 +192,4 @@ INSERT INTO `supplier` (`sup_no`, `name`, `phone`) VALUES
 (2, 'RETro', 989898);
 COMMIT;
 
-/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
-/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
-/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+

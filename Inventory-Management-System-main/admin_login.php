@@ -1,5 +1,5 @@
 <?php
-session_start();//session starts here
+session_start();
 
 ?>
 <html>
@@ -52,15 +52,10 @@ session_start();//session starts here
 </html>
 
 <?php
-/**
- * Created by PhpStorm.
- * User: Ehtesham Mehmood
- * Date: 11/24/2014
- * Time: 3:26 AM
- */
+
 include("database/db_conection.php");
 
-if(isset($_POST['admin_login']))//this will tell us what to do if some data has been post through form with button.
+if(isset($_POST['admin_login']))
 {
     $empno=$_POST['empno'];
     $admin_pass=$_POST['admin_pass'];
